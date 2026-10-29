@@ -1,0 +1,6 @@
+{
+  "name": "NetPulse Studio",
+  "description": "تطبيق احترافي لمحاكاة وتصميم طوبولوجيا الشبكات مستوحى من Cisco Packet Tracer",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
