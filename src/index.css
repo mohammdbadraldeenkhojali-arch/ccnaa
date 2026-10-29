@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', 'Cairo', system-ui, -apple-system, sans-serif;
+  }
+  
+  [dir="rtl"] {
+    font-family: 'Cairo', system-ui, -apple-system, sans-serif;
+  }
+
+  [dir="ltr"] {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.canvas-grid-pattern {
+  background-size: 24px 24px;
+  background-image: radial-gradient(circle, rgba(148, 163, 184, 0.15) 1.2px, transparent 1.2px);
+}
+
+.canvas-subgrid-pattern {
+  background-size: 120px 120px;
+  background-image: 
+    linear-gradient(to right, rgba(148, 163, 184, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(148, 163, 184, 0.05) 1px, transparent 1px);
+}
+
+@keyframes langSwitchFade {
+  0% {
+    opacity: 0.88;
+    filter: blur(0.5px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+.lang-switch-anim {
+  animation: langSwitchFade 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
